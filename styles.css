@@ -1,0 +1,174 @@
+/* Reset básico para garantir consistência entre navegadores */
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+  
+  html {
+	scroll-behavior: smooth; /* Ativa o scroll suave em navegadores compatíveis */
+	font-size: 14px;
+  }
+  
+  body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #f9f9f9;
+  }
+  
+  header {
+	background: #333333fb;
+	color: #fff;
+	padding: 1rem 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+  }
+  
+  header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+  }
+  
+  header h2 a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5rem;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+  }
+  
+  nav ul li {
+	margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+  }
+  
+  .hero {
+	background: url('img/main3.jpeg') no-repeat center center/cover;
+	color: #fff;
+	text-align: center;
+	padding: 15rem 2rem; /* Aumenta o padding para criar mais espaço na parte superior e inferior */
+	min-height: 100vh; /* Define uma altura mínima para a seção */
+	margin-top: 7rem; /* Ajustado o margin-top para evitar sobreposição com o cabeçalho fixo */
+	position: relative;
+  }
+  
+  .hero-content-area {
+	position: absolute;
+	top: 50%; /* Posiciona verticalmente no meio */
+	left: 50%; /* Posiciona horizontalmente no meio */
+	transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+	width: 100%;
+	max-width: 400px; /* Limita a largura do conteúdo */
+	padding: 1rem; /* Adiciona um pouco de padding interno */
+  }
+  
+  .hero-content-area h3 {
+	margin: 0;
+	font-size: 2rem; /* Aumenta o tamanho da fonte do título */
+	line-height: 1.2;
+  }
+  
+  .btn {
+	background: #e74c3c;
+	color: #fff;
+	padding: 0.5rem 1.5rem;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	margin-top: 1rem; /* Adiciona um espaço entre o título e o botão */
+  }
+  
+  .destinations, .packages, .testimonials, .contact {
+	padding: 5rem;
+	background-color: #fff;
+	margin-top: 2rem; /* Espaço entre seções */
+  }
+  
+  .destinations .container, .packages .container, .testimonials .container, .contact .container {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .destinations h3, .packages h3, .testimonials h3, .contact h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .destinations .grid, .packages ul.grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+  }
+  
+  .destinations .grid li, .packages ul.grid li {
+	flex: 1 1 calc(33.333% - 1.5rem);
+	box-sizing: border-box;
+	background: #f4f4f4;
+	padding: 1rem;
+	border-radius: 5px;
+  }
+  
+  .destinations video, .packages img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .testimonials .testimonial {
+	background: #f4f4f4;
+	padding: 1rem;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+  }
+  
+  .testimonials .quote {
+	font-style: italic;
+  }
+  
+  .contact form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .contact input[type="email"] {
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  
+  .contact button.btn {
+	background: #e74c3c;
+	color: #fff;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  footer {
+	background: #333;
+	color: #fff;
+	padding: 1rem 0;
+	text-align: center;
+  }
+  
+  
